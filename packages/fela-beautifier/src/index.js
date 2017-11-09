@@ -5,12 +5,13 @@ import { objectReduce, objectEach } from 'fela-utils'
 import type DOMRenderer from '../../../flowtypes/DOMRenderer'
 
 function addBeautifier(renderer: DOMRenderer, options: Object): DOMRenderer {
-  renderer.subscribe(() =>
-    objectEach(renderer.nodes, (node, key) => {
+  renderer.subscribe(() => {
+    console.log('activate')
+    console.log(renderer.cache)
+    return objectEach(renderer.nodes, (node, key) => {
       node.textContent = cssbeautify(node.textContent, options)
     })
-  )
-
+  })
   return renderer
 }
 

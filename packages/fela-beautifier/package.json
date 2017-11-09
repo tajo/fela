@@ -27,5 +27,9 @@
   "dependencies": {
     "cssbeautify": "0.3.1",
     "fela-utils": "^7.0.4"
+  },
+  "devDependencies": {
+    "fela": "^6.0.4",
+    "fela-tools": "^5.0.12"
   }
 }

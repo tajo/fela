@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Beautifier enhancer beautify 1`] = `".a{color:red}.b{font-size:12px}"`;
